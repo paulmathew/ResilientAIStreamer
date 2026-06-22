@@ -349,11 +349,11 @@ No API key or remote backend is required.
 | Architecture | Pure domain contracts with Hilt bindings |
 | Testing | Deterministic ViewModel recovery test |
 
-## 20-Hour Sprint Constraints
 
+## Deliberate constraints include:
+
+Short Sprint Constraints
 This project intentionally favors a complete, explainable vertical slice over maximum scope.
-
-Deliberate constraints include:
 
 - One Gradle application module
 - Package-level clean architecture
@@ -365,7 +365,7 @@ Deliberate constraints include:
 
 These choices preserve time for the project's core engineering story: streaming state, latency awareness, interruption recovery, and production-readable Android architecture.
 
-## Next Steps With Two Weeks
+## Next Steps 
 
 - Replace the mock stream with an HTTP, SSE, or WebSocket LLM backend.
 - Add idempotent server-issued resume tokens.
