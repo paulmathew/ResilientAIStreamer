@@ -16,9 +16,13 @@ A production-style Android portfolio project demonstrating on-device text recogn
 
 ## Demo
 
-![Resilient AI Streamer demo](docs/media/demo.gif)
+<p align="center">
+  <img src="docs/media/completed-stream.png" width="320" alt="App demo" />
+</p>
 
-![Completed resilient stream](docs/media/completed-stream.png)
+<p align="center">
+  <a href="docs/media/full-demo.mov">Watch the full-quality demo</a>
+</p>
 
 
 ## Objective
