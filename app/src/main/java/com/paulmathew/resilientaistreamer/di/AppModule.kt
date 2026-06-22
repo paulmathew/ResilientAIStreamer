@@ -1,6 +1,8 @@
 package com.paulmathew.resilientaistreamer.di
 
 import com.paulmathew.resilientaistreamer.data.ml.TextExtractorImpl
+import com.paulmathew.resilientaistreamer.data.stream.MockLLMRepositoryImpl
+import com.paulmathew.resilientaistreamer.domain.repository.StreamRepository
 import com.paulmathew.resilientaistreamer.domain.repository.TextExtractor
 import dagger.Binds
 import dagger.Module
@@ -17,4 +19,10 @@ abstract class AppModule {
     abstract fun bindTextExtractor(
         implementation: TextExtractorImpl,
     ): TextExtractor
+
+    @Binds
+    @Singleton
+    abstract fun bindStreamRepository(
+        implementation: MockLLMRepositoryImpl,
+    ): StreamRepository
 }
