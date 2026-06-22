@@ -1,7 +1,9 @@
 package com.paulmathew.resilientaistreamer.di
 
+import com.paulmathew.resilientaistreamer.data.logging.LogcatEventLogger
 import com.paulmathew.resilientaistreamer.data.ml.TextExtractorImpl
 import com.paulmathew.resilientaistreamer.data.stream.MockLLMRepositoryImpl
+import com.paulmathew.resilientaistreamer.domain.repository.EventLogger
 import com.paulmathew.resilientaistreamer.domain.repository.StreamRepository
 import com.paulmathew.resilientaistreamer.domain.repository.TextExtractor
 import dagger.Binds
@@ -25,4 +27,10 @@ abstract class AppModule {
     abstract fun bindStreamRepository(
         implementation: MockLLMRepositoryImpl,
     ): StreamRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindEventLogger(
+        implementation: LogcatEventLogger,
+    ): EventLogger
 }
