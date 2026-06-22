@@ -14,6 +14,13 @@ A production-style Android portfolio project demonstrating on-device text recogn
 - Structured Logcat observability
 - Compose diagnostics and deterministic recovery testing
 
+## Demo
+
+![Resilient AI Streamer demo](docs/media/demo.gif)
+
+![Completed resilient stream](docs/media/completed-stream.png)
+
+
 ## Objective
 
 Resilient AI Streamer turns an image into a streamed, mocked AI response while deliberately introducing realistic failure conditions.
