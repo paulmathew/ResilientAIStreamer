@@ -2,7 +2,7 @@
 
 A production-style Android portfolio project demonstrating on-device text recognition, incremental AI response streaming, partial-output preservation, retry-from-failure, and observable latency metrics.
 
-> **Project status:** V1 complete. This version delivers the full local image-to-resilient-stream workflow within a focused 20-hour sprint.
+> **Project status:** V1 complete. This version delivers the full local image-to-resilient-stream workflow within a focused time.
 
 ### V1 scope
 
@@ -48,12 +48,12 @@ Create stable response chunks
 Stream chunks with simulated latency
     ↓
 Complete successfully ────────────────┐
-    │                                  │
-    └─ or interrupt at chunk N         │
-              ↓                        │
-       Preserve partial output         │
-              ↓                        │
-       Resume from chunk N ────────────┘
+    │                                 │
+    └─ or interrupt at chunk N        │
+              ↓                       │
+       Preserve partial output        │
+              ↓                       │
+       Resume from chunk N ───────────┘
 ```
 
 ## Technology
